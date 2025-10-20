@@ -102,7 +102,7 @@
   #define __COMPILER_BARRIER()                   __ASM volatile("":::"memory")
 #endif
 
-/* ##########################  Core Instruction Access  ######################### */
+/* ##########################  core Instruction Access  ######################### */
 /**
   \brief   No Operation
  */
@@ -366,7 +366,7 @@ __STATIC_FORCEINLINE int32_t __SMMLA (int32_t op1, int32_t op2, int32_t op3)
 
 #endif /* (__ARM_FEATURE_DSP == 1) */
 
-/* ###########################  Core Function Access  ########################### */
+/* ###########################  core Function Access  ########################### */
 
 /**
   \brief   Enable IRQ Interrupts

@@ -874,7 +874,7 @@ TDES7 |                         Transmit Time Stamp High [31:0]                 
   * @{
   */
 #define ETH_MAX_PACKET_SIZE      1528U    /*!< ETH_HEADER + 2*VLAN_TAG + MAX_ETH_PAYLOAD + ETH_CRC */
-#define ETH_HEADER               14U    /*!< 6 byte Dest addr, 6 byte Src addr, 2 byte length/type */
+#define ETH_HEADER               14U    /*!< 6 byte Dest addr, 6 byte src addr, 2 byte length/type */
 #define ETH_CRC                  4U    /*!< Ethernet CRC */
 #define ETH_VLAN_TAG             4U    /*!< optional 802.1q VLAN Tag */
 #define ETH_MIN_PAYLOAD          46U    /*!< Minimum Ethernet payload size */

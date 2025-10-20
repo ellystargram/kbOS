@@ -194,7 +194,7 @@ USBD_StatusTypeDef USBD_DeInit(USBD_HandleTypeDef *pdev)
 
 /**
   * @brief  USBD_RegisterClass
-  *         Link class driver to Device Core.
+  *         Link class driver to Device core.
   * @param  pdev: Device Handle
   * @param  pclass: Class handle
   * @retval USBD Status
@@ -236,7 +236,7 @@ USBD_StatusTypeDef USBD_RegisterClass(USBD_HandleTypeDef *pdev, USBD_ClassTypeDe
 #ifdef USE_USBD_COMPOSITE
 /**
   * @brief  USBD_RegisterClassComposite
-  *         Link class driver to Device Core.
+  *         Link class driver to Device core.
   * @param  pdev : Device Handle
   * @param  pclass: Class handle
   * @param  classtype: Class type
@@ -290,7 +290,7 @@ USBD_StatusTypeDef USBD_RegisterClassComposite(USBD_HandleTypeDef *pdev, USBD_Cl
 
 /**
   * @brief  USBD_UnRegisterClassComposite
-  *         UnLink all composite class drivers from Device Core.
+  *         UnLink all composite class drivers from Device core.
   * @param  pdev: Device Handle
   * @retval USBD Status
   */
@@ -377,7 +377,7 @@ USBD_StatusTypeDef USBD_RegisterDevStateCallback(USBD_HandleTypeDef *pdev, USBD_
 
 /**
   * @brief  USBD_Start
-  *         Start the USB Device Core.
+  *         Start the USB Device core.
   * @param  pdev: Device Handle
   * @retval USBD Status
   */
@@ -393,7 +393,7 @@ USBD_StatusTypeDef USBD_Start(USBD_HandleTypeDef *pdev)
 
 /**
   * @brief  USBD_Stop
-  *         Stop the USB Device Core.
+  *         Stop the USB Device core.
   * @param  pdev: Device Handle
   * @retval USBD Status
   */

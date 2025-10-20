@@ -45,13 +45,13 @@ extern const VECTOR_TABLE_Type __VECTOR_TABLE[240];
 
 
 /*----------------------------------------------------------------------------
-  System Core Clock Variable
+  System core Clock Variable
  *----------------------------------------------------------------------------*/
-uint32_t SystemCoreClock = SYSTEM_CLOCK;  /* System Core Clock Frequency */
+uint32_t SystemCoreClock = SYSTEM_CLOCK;  /* System core Clock Frequency */
 
 
 /*----------------------------------------------------------------------------
-  System Core Clock update function
+  System core Clock update function
  *----------------------------------------------------------------------------*/
 void SystemCoreClockUpdate (void)
 {

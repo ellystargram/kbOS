@@ -49,14 +49,14 @@ extern "C"
 /*
 
 Normally those kind of definitions are in a compiler file
-in Core or Core_A.
+in core or Core_A.
 
 But for MSVC compiler it is a bit special. The goal is very specific
 to CMSIS-DSP and only to allow the use of this library from other
 systems like Python or Matlab.
 
 MSVC is not going to be used to cross-compile to ARM. So, having a MSVC
-compiler file in Core or Core_A would not make sense.
+compiler file in core or Core_A would not make sense.
 
 */
 #if defined ( _MSC_VER ) || defined(__GNUC_PYTHON__) || defined(__APPLE_CC__)

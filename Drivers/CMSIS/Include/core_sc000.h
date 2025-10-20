@@ -1,6 +1,6 @@
 /**************************************************************************//**
  * @file     core_sc000.h
- * @brief    CMSIS SC000 Core Peripheral Access Layer Header File
+ * @brief    CMSIS SC000 core Peripheral Access Layer Header File
  * @version  V5.0.7
  * @date     27. March 2020
  ******************************************************************************/
@@ -185,12 +185,12 @@
 
 /*******************************************************************************
  *                 Register Abstraction
-  Core Register contain:
-  - Core Register
-  - Core NVIC Register
-  - Core SCB Register
-  - Core SysTick Register
-  - Core MPU Register
+  core Register contain:
+  - core Register
+  - core NVIC Register
+  - core SCB Register
+  - core SysTick Register
+  - core MPU Register
  ******************************************************************************/
 /**
   \defgroup CMSIS_core_register Defines and Type Definitions
@@ -200,7 +200,7 @@
 /**
   \ingroup    CMSIS_core_register
   \defgroup   CMSIS_CORE  Status and Control Registers
-  \brief      Core Register type definitions.
+  \brief      core Register type definitions.
   @{
  */
 
@@ -617,8 +617,8 @@ typedef struct
 
 /**
   \ingroup  CMSIS_core_register
-  \defgroup CMSIS_CoreDebug       Core Debug Registers (CoreDebug)
-  \brief    SC000 Core Debug Registers (DCB registers, SHCSR, and DFSR) are only accessible over DAP and not via processor.
+  \defgroup CMSIS_CoreDebug       core Debug Registers (CoreDebug)
+  \brief    SC000 core Debug Registers (DCB registers, SHCSR, and DFSR) are only accessible over DAP and not via processor.
             Therefore they are not covered by the SC000 header file.
   @{
  */
@@ -627,7 +627,7 @@ typedef struct
 
 /**
   \ingroup    CMSIS_core_register
-  \defgroup   CMSIS_core_bitfield     Core register bit field macros
+  \defgroup   CMSIS_core_bitfield     core register bit field macros
   \brief      Macros for use with bit field definitions (xxx_Pos, xxx_Msk).
   @{
  */
@@ -653,12 +653,12 @@ typedef struct
 
 /**
   \ingroup    CMSIS_core_register
-  \defgroup   CMSIS_core_base     Core Definitions
+  \defgroup   CMSIS_core_base     core Definitions
   \brief      Definitions for base addresses, unions, and structures.
   @{
  */
 
-/* Memory mapping of Core Hardware */
+/* Memory mapping of core Hardware */
 #define SCS_BASE            (0xE000E000UL)                            /*!< System Control Space Base Address */
 #define SysTick_BASE        (SCS_BASE +  0x0010UL)                    /*!< SysTick Base Address */
 #define NVIC_BASE           (SCS_BASE +  0x0100UL)                    /*!< NVIC Base Address */
@@ -680,10 +680,10 @@ typedef struct
 
 /*******************************************************************************
  *                Hardware Abstraction Layer
-  Core Function Interface contains:
-  - Core NVIC Functions
-  - Core SysTick Functions
-  - Core Register Access Functions
+  core Function Interface contains:
+  - core NVIC Functions
+  - core SysTick Functions
+  - core Register Access Functions
  ******************************************************************************/
 /**
   \defgroup CMSIS_Core_FunctionInterface Functions and Instructions Reference

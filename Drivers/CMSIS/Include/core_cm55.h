@@ -1,6 +1,6 @@
 /**************************************************************************//**
  * @file     core_cm55.h
- * @brief    CMSIS Cortex-M55 Core Peripheral Access Layer Header File
+ * @brief    CMSIS Cortex-M55 core Peripheral Access Layer Header File
  * @version  V1.2.4
  * @date     21. April 2022
  ******************************************************************************/
@@ -70,7 +70,7 @@
 #define __CM55_CMSIS_VERSION       ((__CM55_CMSIS_VERSION_MAIN << 16U) | \
                                      __CM55_CMSIS_VERSION_SUB           )     /*!< \deprecated CMSIS HAL version number */
 
-#define __CORTEX_M                      (55U)                                 /*!< Cortex-M Core */
+#define __CORTEX_M                      (55U)                                 /*!< Cortex-M core */
 
 #if defined ( __CC_ARM )
   #error Legacy Arm Compiler does not support Armv8.1-M target architecture.
@@ -300,17 +300,17 @@
 
 /*******************************************************************************
  *                 Register Abstraction
-  Core Register contain:
-  - Core Register
-  - Core NVIC Register
-  - Core EWIC Register
-  - Core SCB Register
-  - Core SysTick Register
-  - Core Debug Register
-  - Core PMU Register
-  - Core MPU Register
-  - Core SAU Register
-  - Core FPU Register
+  core Register contain:
+  - core Register
+  - core NVIC Register
+  - core EWIC Register
+  - core SCB Register
+  - core SysTick Register
+  - core Debug Register
+  - core PMU Register
+  - core MPU Register
+  - core SAU Register
+  - core FPU Register
  ******************************************************************************/
 /**
   \defgroup CMSIS_core_register Defines and Type Definitions
@@ -320,7 +320,7 @@
 /**
   \ingroup    CMSIS_core_register
   \defgroup   CMSIS_CORE  Status and Control Registers
-  \brief      Core Register type definitions.
+  \brief      core Register type definitions.
   @{
  */
 
@@ -1536,11 +1536,11 @@ typedef struct
  */
 typedef struct
 {
-  __IOM uint32_t CPDLPSTATE;             /*!< Offset: 0x000 (R/W)  Core Power Domain Low Power State Register */
+  __IOM uint32_t CPDLPSTATE;             /*!< Offset: 0x000 (R/W)  core Power Domain Low Power State Register */
   __IOM uint32_t DPDLPSTATE;             /*!< Offset: 0x004 (R/W)  Debug Power Domain Low Power State Register */
 } PwrModCtl_Type;
 
-/* PWRMODCTL Core Power Domain Low Power State (CPDLPSTATE) Register Definitions */
+/* PWRMODCTL core Power Domain Low Power State (CPDLPSTATE) Register Definitions */
 #define PWRMODCTL_CPDLPSTATE_RLPSTATE_Pos   8U                                              /*!< PWRMODCTL CPDLPSTATE: RLPSTATE Position */
 #define PWRMODCTL_CPDLPSTATE_RLPSTATE_Msk  (0x3UL << PWRMODCTL_CPDLPSTATE_RLPSTATE_Pos)     /*!< PWRMODCTL CPDLPSTATE: RLPSTATE Mask */
 
@@ -3108,19 +3108,19 @@ typedef struct
 /* CoreDebug is deprecated. replaced by DCB (Debug Control Block) */
 /**
   \ingroup  CMSIS_core_register
-  \defgroup CMSIS_CoreDebug       Core Debug Registers (CoreDebug)
-  \brief    Type definitions for the Core Debug Registers
+  \defgroup CMSIS_CoreDebug       core Debug Registers (CoreDebug)
+  \brief    Type definitions for the core Debug Registers
   @{
  */
 
 /**
-  \brief  \deprecated Structure type to access the Core Debug Register (CoreDebug).
+  \brief  \deprecated Structure type to access the core Debug Register (CoreDebug).
  */
 typedef struct
 {
   __IOM uint32_t DHCSR;                  /*!< Offset: 0x000 (R/W)  Debug Halting Control and Status Register */
-  __OM  uint32_t DCRSR;                  /*!< Offset: 0x004 ( /W)  Debug Core Register Selector Register */
-  __IOM uint32_t DCRDR;                  /*!< Offset: 0x008 (R/W)  Debug Core Register Data Register */
+  __OM  uint32_t DCRSR;                  /*!< Offset: 0x004 ( /W)  Debug core Register Selector Register */
+  __IOM uint32_t DCRDR;                  /*!< Offset: 0x008 (R/W)  Debug core Register Data Register */
   __IOM uint32_t DEMCR;                  /*!< Offset: 0x00C (R/W)  Debug Exception and Monitor Control Register */
   __OM  uint32_t DSCEMCR;                /*!< Offset: 0x010 ( /W)  Debug Set Clear Exception and Monitor Control Register */
   __IOM uint32_t DAUTHCTRL;              /*!< Offset: 0x014 (R/W)  Debug Authentication Control Register */
@@ -3182,7 +3182,7 @@ typedef struct
 #define CoreDebug_DHCSR_C_DEBUGEN_Pos       0U                                            /*!< \deprecated CoreDebug DHCSR: C_DEBUGEN Position */
 #define CoreDebug_DHCSR_C_DEBUGEN_Msk      (1UL /*<< CoreDebug_DHCSR_C_DEBUGEN_Pos*/)     /*!< \deprecated CoreDebug DHCSR: C_DEBUGEN Mask */
 
-/* Debug Core Register Selector Register Definitions */
+/* Debug core Register Selector Register Definitions */
 #define CoreDebug_DCRSR_REGWnR_Pos         16U                                            /*!< \deprecated CoreDebug DCRSR: REGWnR Position */
 #define CoreDebug_DCRSR_REGWnR_Msk         (1UL << CoreDebug_DCRSR_REGWnR_Pos)            /*!< \deprecated CoreDebug DCRSR: REGWnR Mask */
 
@@ -3290,8 +3290,8 @@ typedef struct
 typedef struct
 {
   __IOM uint32_t DHCSR;                  /*!< Offset: 0x000 (R/W)  Debug Halting Control and Status Register */
-  __OM  uint32_t DCRSR;                  /*!< Offset: 0x004 ( /W)  Debug Core Register Selector Register */
-  __IOM uint32_t DCRDR;                  /*!< Offset: 0x008 (R/W)  Debug Core Register Data Register */
+  __OM  uint32_t DCRSR;                  /*!< Offset: 0x004 ( /W)  Debug core Register Selector Register */
+  __IOM uint32_t DCRDR;                  /*!< Offset: 0x008 (R/W)  Debug core Register Data Register */
   __IOM uint32_t DEMCR;                  /*!< Offset: 0x00C (R/W)  Debug Exception and Monitor Control Register */
   __OM  uint32_t DSCEMCR;                /*!< Offset: 0x010 ( /W)  Debug Set Clear Exception and Monitor Control Register */
   __IOM uint32_t DAUTHCTRL;              /*!< Offset: 0x014 (R/W)  Debug Authentication Control Register */
@@ -3353,14 +3353,14 @@ typedef struct
 #define DCB_DHCSR_C_DEBUGEN_Pos             0U                                            /*!< DCB DHCSR: Debug enable control Position */
 #define DCB_DHCSR_C_DEBUGEN_Msk            (0x1UL /*<< DCB_DHCSR_C_DEBUGEN_Pos*/)         /*!< DCB DHCSR: Debug enable control Mask */
 
-/* DCRSR, Debug Core Register Select Register Definitions */
+/* DCRSR, Debug core Register Select Register Definitions */
 #define DCB_DCRSR_REGWnR_Pos               16U                                            /*!< DCB DCRSR: Register write/not-read Position */
 #define DCB_DCRSR_REGWnR_Msk               (0x1UL << DCB_DCRSR_REGWnR_Pos)                /*!< DCB DCRSR: Register write/not-read Mask */
 
 #define DCB_DCRSR_REGSEL_Pos                0U                                            /*!< DCB DCRSR: Register selector Position */
 #define DCB_DCRSR_REGSEL_Msk               (0x7FUL /*<< DCB_DCRSR_REGSEL_Pos*/)           /*!< DCB DCRSR: Register selector Mask */
 
-/* DCRDR, Debug Core Register Data Register Definitions */
+/* DCRDR, Debug core Register Data Register Definitions */
 #define DCB_DCRDR_DBGTMP_Pos                0U                                            /*!< DCB DCRDR: Data temporary buffer Position */
 #define DCB_DCRDR_DBGTMP_Msk               (0xFFFFFFFFUL /*<< DCB_DCRDR_DBGTMP_Pos*/)     /*!< DCB DCRDR: Data temporary buffer Mask */
 
@@ -3413,8 +3413,8 @@ typedef struct
 #define DCB_DEMCR_VC_MMERR_Pos              4U                                            /*!< DCB DEMCR: Vector Catch MemManage errors Position */
 #define DCB_DEMCR_VC_MMERR_Msk             (0x1UL << DCB_DEMCR_VC_MMERR_Pos)              /*!< DCB DEMCR: Vector Catch MemManage errors Mask */
 
-#define DCB_DEMCR_VC_CORERESET_Pos          0U                                            /*!< DCB DEMCR: Vector Catch Core reset Position */
-#define DCB_DEMCR_VC_CORERESET_Msk         (0x1UL /*<< DCB_DEMCR_VC_CORERESET_Pos*/)      /*!< DCB DEMCR: Vector Catch Core reset Mask */
+#define DCB_DEMCR_VC_CORERESET_Pos          0U                                            /*!< DCB DEMCR: Vector Catch core reset Position */
+#define DCB_DEMCR_VC_CORERESET_Msk         (0x1UL /*<< DCB_DEMCR_VC_CORERESET_Pos*/)      /*!< DCB DEMCR: Vector Catch core reset Mask */
 
 /* DSCEMCR, Debug Set Clear Exception and Monitor Control Register Definitions */
 #define DCB_DSCEMCR_CLR_MON_REQ_Pos        19U                                            /*!< DCB DSCEMCR: Clear monitor request Position */
@@ -3555,7 +3555,7 @@ typedef struct
 
 /**
   \ingroup    CMSIS_core_register
-  \defgroup   CMSIS_core_bitfield     Core register bit field macros
+  \defgroup   CMSIS_core_bitfield     core register bit field macros
   \brief      Macros for use with bit field definitions (xxx_Pos, xxx_Msk).
   @{
  */
@@ -3581,12 +3581,12 @@ typedef struct
 
 /**
   \ingroup    CMSIS_core_register
-  \defgroup   CMSIS_core_base     Core Definitions
+  \defgroup   CMSIS_core_base     core Definitions
   \brief      Definitions for base addresses, unions, and structures.
   @{
  */
 
-/* Memory mapping of Core Hardware */
+/* Memory mapping of core Hardware */
   #define SCS_BASE            (0xE000E000UL)                             /*!< System Control Space Base Address */
   #define ITM_BASE            (0xE0000000UL)                             /*!< ITM Base Address */
   #define DWT_BASE            (0xE0001000UL)                             /*!< DWT Base Address */
@@ -3597,7 +3597,7 @@ typedef struct
   #define PRCCFGINF_BASE      (0xE001E700UL)                             /*!< Processor Configuration Information Base Address */
   #define STL_BASE            (0xE001E800UL)                             /*!< Software Test Library Base Address */
   #define TPI_BASE            (0xE0040000UL)                             /*!< TPI Base Address */
-  #define CoreDebug_BASE      (0xE000EDF0UL)                             /*!< \deprecated Core Debug Base Address */
+  #define CoreDebug_BASE      (0xE000EDF0UL)                             /*!< \deprecated core Debug Base Address */
   #define DCB_BASE            (0xE000EDF0UL)                             /*!< DCB Base Address */
   #define DIB_BASE            (0xE000EFB0UL)                             /*!< DIB Base Address */
   #define SysTick_BASE        (SCS_BASE +  0x0010UL)                     /*!< SysTick Base Address */
@@ -3617,7 +3617,7 @@ typedef struct
   #define EWIC                ((EWIC_Type      *)     EWIC_BASE        ) /*!< EWIC configuration struct */
   #define PRCCFGINF           ((PrcCfgInf_Type *)     PRCCFGINF_BASE   ) /*!< Processor Configuration Information configuration struct */
   #define STL                 ((STL_Type       *)     STL_BASE         ) /*!< Software Test Library configuration struct */
-  #define CoreDebug           ((CoreDebug_Type *)     CoreDebug_BASE   ) /*!< \deprecated Core Debug configuration struct */
+  #define CoreDebug           ((CoreDebug_Type *)     CoreDebug_BASE   ) /*!< \deprecated core Debug configuration struct */
   #define DCB                 ((DCB_Type       *)     DCB_BASE         ) /*!< DCB configuration struct */
   #define DIB                 ((DIB_Type       *)     DIB_BASE         ) /*!< DIB configuration struct */
 
@@ -3641,7 +3641,7 @@ typedef struct
 
 #if defined (__ARM_FEATURE_CMSE) && (__ARM_FEATURE_CMSE == 3U)
   #define SCS_BASE_NS         (0xE002E000UL)                             /*!< System Control Space Base Address (non-secure address space) */
-  #define CoreDebug_BASE_NS   (0xE002EDF0UL)                             /*!< \deprecated Core Debug Base Address           (non-secure address space) */
+  #define CoreDebug_BASE_NS   (0xE002EDF0UL)                             /*!< \deprecated core Debug Base Address           (non-secure address space) */
   #define DCB_BASE_NS         (0xE002EDF0UL)                             /*!< DCB Base Address                  (non-secure address space) */
   #define DIB_BASE_NS         (0xE002EFB0UL)                             /*!< DIB Base Address                  (non-secure address space) */
   #define SysTick_BASE_NS     (SCS_BASE_NS +  0x0010UL)                  /*!< SysTick Base Address              (non-secure address space) */
@@ -3652,7 +3652,7 @@ typedef struct
   #define SCB_NS              ((SCB_Type       *)     SCB_BASE_NS      ) /*!< SCB configuration struct          (non-secure address space) */
   #define SysTick_NS          ((SysTick_Type   *)     SysTick_BASE_NS  ) /*!< SysTick configuration struct      (non-secure address space) */
   #define NVIC_NS             ((NVIC_Type      *)     NVIC_BASE_NS     ) /*!< NVIC configuration struct         (non-secure address space) */
-  #define CoreDebug_NS        ((CoreDebug_Type *)     CoreDebug_BASE_NS) /*!< \deprecated Core Debug configuration struct   (non-secure address space) */
+  #define CoreDebug_NS        ((CoreDebug_Type *)     CoreDebug_BASE_NS) /*!< \deprecated core Debug configuration struct   (non-secure address space) */
   #define DCB_NS              ((DCB_Type       *)     DCB_BASE_NS      ) /*!< DCB configuration struct          (non-secure address space) */
   #define DIB_NS              ((DIB_Type       *)     DIB_BASE_NS      ) /*!< DIB configuration struct          (non-secure address space) */
 
@@ -3734,11 +3734,11 @@ typedef ICB_Type SCnSCB_Type;
 
 /*******************************************************************************
  *                Hardware Abstraction Layer
-  Core Function Interface contains:
-  - Core NVIC Functions
-  - Core SysTick Functions
-  - Core Debug Functions
-  - Core Register Access Functions
+  core Function Interface contains:
+  - core NVIC Functions
+  - core SysTick Functions
+  - core Debug Functions
+  - core Register Access Functions
  ******************************************************************************/
 /**
   \defgroup CMSIS_Core_FunctionInterface Functions and Instructions Reference

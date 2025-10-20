@@ -42,9 +42,9 @@ extern "C" {
   */
 
 /**
-  * @brief Configuration of the Cortex-M4 Processor and Core Peripherals
+  * @brief Configuration of the Cortex-M4 Processor and core Peripherals
   */
-#define __CM4_REV                 0x0001U  /*!< Core revision r0p1                            */
+#define __CM4_REV                 0x0001U  /*!< core revision r0p1                            */
 #define __MPU_PRESENT             1U       /*!< STM32F4XX provides an MPU                     */
 #define __NVIC_PRIO_BITS          4U       /*!< STM32F4XX uses 4 Bits for the Priority Levels */
 #define __Vendor_SysTickConfig    0U       /*!< Set to 1 if different SysTick Config is used  */
@@ -934,11 +934,11 @@ typedef struct
 {
   __IO uint32_t GOTGCTL;              /*!< USB_OTG Control and Status Register          000h */
   __IO uint32_t GOTGINT;              /*!< USB_OTG Interrupt Register                   004h */
-  __IO uint32_t GAHBCFG;              /*!< Core AHB Configuration Register              008h */
-  __IO uint32_t GUSBCFG;              /*!< Core USB Configuration Register              00Ch */
-  __IO uint32_t GRSTCTL;              /*!< Core Reset Register                          010h */
-  __IO uint32_t GINTSTS;              /*!< Core Interrupt Register                      014h */
-  __IO uint32_t GINTMSK;              /*!< Core Interrupt Mask Register                 018h */
+  __IO uint32_t GAHBCFG;              /*!< core AHB Configuration Register              008h */
+  __IO uint32_t GUSBCFG;              /*!< core USB Configuration Register              00Ch */
+  __IO uint32_t GRSTCTL;              /*!< core Reset Register                          010h */
+  __IO uint32_t GINTSTS;              /*!< core Interrupt Register                      014h */
+  __IO uint32_t GINTMSK;              /*!< core Interrupt Mask Register                 018h */
   __IO uint32_t GRXSTSR;              /*!< Receive Sts Q Read Register                  01Ch */
   __IO uint32_t GRXSTSP;              /*!< Receive Sts Q Read & POP Register            020h */
   __IO uint32_t GRXFSIZ;              /*!< Receive FIFO Size Register                   024h */
@@ -15558,7 +15558,7 @@ typedef struct
 /********************  Bit definition for USB_OTG_GRSTCTL register  ********************/
 #define USB_OTG_GRSTCTL_CSRST_Pos                (0U)
 #define USB_OTG_GRSTCTL_CSRST_Msk                (0x1UL << USB_OTG_GRSTCTL_CSRST_Pos) /*!< 0x00000001 */
-#define USB_OTG_GRSTCTL_CSRST                    USB_OTG_GRSTCTL_CSRST_Msk     /*!< Core soft reset          */
+#define USB_OTG_GRSTCTL_CSRST                    USB_OTG_GRSTCTL_CSRST_Msk     /*!< core soft reset          */
 #define USB_OTG_GRSTCTL_HSRST_Pos                (1U)
 #define USB_OTG_GRSTCTL_HSRST_Msk                (0x1UL << USB_OTG_GRSTCTL_HSRST_Pos) /*!< 0x00000002 */
 #define USB_OTG_GRSTCTL_HSRST                    USB_OTG_GRSTCTL_HSRST_Msk     /*!< HCLK soft reset          */

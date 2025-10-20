@@ -131,8 +131,8 @@
 #define __VECTOR_TABLE_ATTRIBUTE  __attribute__((used, section("RESET")))
 #endif
 
-/* ##########################  Core Instruction Access  ######################### */
-/** \defgroup CMSIS_Core_InstructionInterface CMSIS Core Instruction Interface
+/* ##########################  core Instruction Access  ######################### */
+/** \defgroup CMSIS_Core_InstructionInterface CMSIS core Instruction Interface
   Access to dedicated instructions
   @{
 */
@@ -526,9 +526,9 @@ __attribute__((always_inline)) __STATIC_INLINE uint32_t __USAT(int32_t val, uint
 /*@}*/ /* end of group CMSIS_Core_InstructionInterface */
 
 
-/* ###########################  Core Function Access  ########################### */
+/* ###########################  core Function Access  ########################### */
 /** \ingroup  CMSIS_Core_FunctionInterface
-    \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
+    \defgroup CMSIS_Core_RegAccFunctions CMSIS core Register Access Functions
   @{
  */
 

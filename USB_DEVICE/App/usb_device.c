@@ -39,7 +39,7 @@
 
 /* USER CODE END PFP */
 
-/* USB Device Core handle declaration. */
+/* USB Device core handle declaration. */
 USBD_HandleTypeDef hUsbDeviceFS;
 
 /*

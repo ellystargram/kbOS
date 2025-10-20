@@ -101,7 +101,7 @@ void arm_f16_to_q15(
         q15_t * pDst,
         uint32_t blockSize)
 {
-    const float16_t *pIn = pSrc;      /* Src pointer */
+    const float16_t *pIn = pSrc;      /* src pointer */
     uint32_t  blkCnt;           /* loop counter */
 #ifdef ARM_MATH_ROUNDING
     float16_t in;

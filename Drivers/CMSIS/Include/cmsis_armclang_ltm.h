@@ -152,8 +152,8 @@ __STATIC_FORCEINLINE void __TZ_set_STACKSEAL_S (uint32_t* stackTop) {
 #endif
 
 
-/* ##########################  Core Instruction Access  ######################### */
-/** \defgroup CMSIS_Core_InstructionInterface CMSIS Core Instruction Interface
+/* ##########################  core Instruction Access  ######################### */
+/** \defgroup CMSIS_Core_InstructionInterface CMSIS core Instruction Interface
   Access to dedicated instructions
   @{
 */
@@ -711,9 +711,9 @@ __STATIC_FORCEINLINE void __STL(uint32_t value, volatile uint32_t *ptr)
 /*@}*/ /* end of group CMSIS_Core_InstructionInterface */
 
 
-/* ###########################  Core Function Access  ########################### */
+/* ###########################  core Function Access  ########################### */
 /** \ingroup  CMSIS_Core_FunctionInterface
-    \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
+    \defgroup CMSIS_Core_RegAccFunctions CMSIS core Register Access Functions
   @{
  */
 

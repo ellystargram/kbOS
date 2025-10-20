@@ -66,7 +66,7 @@ void arm_cfft_radix4by2_f16(
  */
 
 /*
-* @brief  Core function for the floating-point CFFT butterfly process.
+* @brief  core function for the floating-point CFFT butterfly process.
 * @param[in, out] *pSrc            points to the in-place buffer of floating-point data type.
 * @param[in]      fftLen           length of the FFT.
 * @param[in]      *pCoef           points to the twiddle coefficient buffer.
@@ -162,7 +162,7 @@ void arm_cfft_radix4_f16(
  * ---------------------------------------------------------------------- */
 
 /*
-* @brief  Core function for the floating-point CFFT butterfly process.
+* @brief  core function for the floating-point CFFT butterfly process.
 * @param[in, out] *pSrc            points to the in-place buffer of floating-point data type.
 * @param[in]      fftLen           length of the FFT.
 * @param[in]      *pCoef           points to the twiddle coefficient buffer.
@@ -665,7 +665,7 @@ uint16_t twidCoefModifier)
 }
 
 /*
-* @brief  Core function for the floating-point CIFFT butterfly process.
+* @brief  core function for the floating-point CIFFT butterfly process.
 * @param[in, out] *pSrc            points to the in-place buffer of floating-point data type.
 * @param[in]      fftLen           length of the FFT.
 * @param[in]      *pCoef           points to twiddle coefficient buffer.

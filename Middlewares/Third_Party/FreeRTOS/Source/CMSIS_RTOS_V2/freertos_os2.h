@@ -26,7 +26,7 @@
 #include <string.h>
 #include <stdint.h>
 
-#include "FreeRTOS.h"                   // ARM.FreeRTOS::RTOS:Core
+#include "FreeRTOS.h"                   // ARM.FreeRTOS::RTOS:core
 
 #include CMSIS_device_header
 

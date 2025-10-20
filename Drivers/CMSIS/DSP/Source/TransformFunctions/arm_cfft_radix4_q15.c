@@ -136,7 +136,7 @@ void arm_cfft_radix4_q15(
  */
 
 /**
-  @brief         Core function for the Q15 CFFT butterfly process.
+  @brief         core function for the Q15 CFFT butterfly process.
   @param[in,out] pSrc16          points to the in-place buffer of Q15 data type
   @param[in]     fftLen           length of the FFT
   @param[in]     pCoef16         points to twiddle coefficient buffer
@@ -966,7 +966,7 @@ void arm_radix4_butterfly_q15(
 
 
 /**
-  @brief         Core function for the Q15 CIFFT butterfly process.
+  @brief         core function for the Q15 CIFFT butterfly process.
   @param[in,out] pSrc16           points to the in-place buffer of Q15 data type
   @param[in]     fftLen           length of the FFT
   @param[in]     pCoef16          points to twiddle coefficient buffer

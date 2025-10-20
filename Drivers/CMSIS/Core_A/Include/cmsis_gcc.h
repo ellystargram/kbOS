@@ -323,7 +323,7 @@ __STATIC_FORCEINLINE uint32_t __SMLSDX (uint32_t op1, uint32_t op2, uint32_t op3
 }
 
 
-/* ##########################  Core Instruction Access  ######################### */
+/* ##########################  core Instruction Access  ######################### */
 /**
   \brief   No Operation
  */
@@ -636,7 +636,7 @@ __extension__ \
   __RES; \
  })
 
-/* ###########################  Core Function Access  ########################### */
+/* ###########################  core Function Access  ########################### */
 
 /**
   \brief   Enable IRQ Interrupts

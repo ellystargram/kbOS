@@ -42,9 +42,9 @@ extern "C" {
   */
 
 /**
-  * @brief Configuration of the Cortex-M4 Processor and Core Peripherals
+  * @brief Configuration of the Cortex-M4 Processor and core Peripherals
   */
-#define __CM4_REV                 0x0001U  /*!< Core revision r0p1                            */
+#define __CM4_REV                 0x0001U  /*!< core revision r0p1                            */
 #define __MPU_PRESENT             1U       /*!< STM32F4XX provides an MPU                     */
 #define __NVIC_PRIO_BITS          4U       /*!< STM32F4XX uses 4 Bits for the Priority Levels */
 #define __Vendor_SysTickConfig    0U       /*!< Set to 1 if different SysTick Config is used  */
@@ -5982,7 +5982,7 @@ typedef struct
 /******************  Bit definition for SYSCFG_CFGR2 register  *****************/
 #define SYSCFG_CFGR2_LOCKUP_LOCK_Pos         (0U)
 #define SYSCFG_CFGR2_LOCKUP_LOCK_Msk         (0x1UL << SYSCFG_CFGR2_LOCKUP_LOCK_Pos) /*!< 0x00000001 */
-#define SYSCFG_CFGR2_LOCKUP_LOCK             SYSCFG_CFGR2_LOCKUP_LOCK_Msk      /*!<Core Lockup lock */
+#define SYSCFG_CFGR2_LOCKUP_LOCK             SYSCFG_CFGR2_LOCKUP_LOCK_Msk      /*!<core Lockup lock */
 #define SYSCFG_CFGR2_PVD_LOCK_Pos            (2U)
 #define SYSCFG_CFGR2_PVD_LOCK_Msk            (0x1UL << SYSCFG_CFGR2_PVD_LOCK_Pos) /*!< 0x00000004 */
 #define SYSCFG_CFGR2_PVD_LOCK                SYSCFG_CFGR2_PVD_LOCK_Msk         /*!<PVD Lock         */

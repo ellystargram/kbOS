@@ -103,7 +103,7 @@ void arm_q31_to_float(
         float32_t * pDst,
         uint32_t blockSize)
 {
-  const q31_t *pIn = pSrc;                             /* Src pointer */
+  const q31_t *pIn = pSrc;                             /* src pointer */
   uint32_t blkCnt;                               /* loop counter */
 
   int32x4_t inV;
@@ -150,7 +150,7 @@ void arm_q31_to_float(
   float32_t * pDst,
   uint32_t blockSize)
 {
-  const q31_t *pIn = pSrc;                             /* Src pointer */
+  const q31_t *pIn = pSrc;                             /* src pointer */
   uint32_t blkCnt;                               /* loop counter */
 
 #if defined (ARM_MATH_LOOPUNROLL)

@@ -29,7 +29,7 @@
     [..]
       (#) Fill parameters of Init structure in USB_CfgTypeDef structure.
 
-      (#) Call USB_CoreInit() API to initialize the USB Core peripheral.
+      (#) Call USB_CoreInit() API to initialize the USB core peripheral.
 
       (#) The upper HAL HCD/PCD driver will call the right routines for its internal processes.
 
@@ -74,7 +74,7 @@ static HAL_StatusTypeDef USB_CoreReset(USB_OTG_GlobalTypeDef *USBx);
   */
 
 /**
-  * @brief  Initializes the USB Core
+  * @brief  Initializes the USB core
   * @param  USBx USB Instance
   * @param  cfg pointer to a USB_OTG_CfgTypeDef structure that contains
   *         the configuration information for the specified USBx peripheral.
@@ -354,18 +354,18 @@ HAL_StatusTypeDef USB_DevInit(USB_OTG_GlobalTypeDef *USBx, USB_OTG_CfgTypeDef cf
   {
     if (cfg.speed == USBD_HS_SPEED)
     {
-      /* Set Core speed to High speed mode */
+      /* Set core speed to High speed mode */
       (void)USB_SetDevSpeed(USBx, USB_OTG_SPEED_HIGH);
     }
     else
     {
-      /* Set Core speed to Full speed mode */
+      /* Set core speed to Full speed mode */
       (void)USB_SetDevSpeed(USBx, USB_OTG_SPEED_HIGH_IN_FULL);
     }
   }
   else
   {
-    /* Set Core speed to Full speed mode */
+    /* Set core speed to Full speed mode */
     (void)USB_SetDevSpeed(USBx, USB_OTG_SPEED_FULL);
   }
 
@@ -1399,7 +1399,7 @@ HAL_StatusTypeDef USB_EP0_OutStart(const USB_OTG_GlobalTypeDef *USBx, uint8_t dm
 }
 
 /**
-  * @brief  Reset the USB Core (needed after USB clock settings change)
+  * @brief  Reset the USB core (needed after USB clock settings change)
   * @param  USBx  Selected device
   * @retval HAL status
   */
@@ -1426,7 +1426,7 @@ static HAL_StatusTypeDef USB_CoreReset(USB_OTG_GlobalTypeDef *USBx)
     count--;
   }
 
-  /* Core Soft Reset */
+  /* core Soft Reset */
   USBx->GRSTCTL |= USB_OTG_GRSTCTL_CSRST;
 
   do
@@ -1842,7 +1842,7 @@ HAL_StatusTypeDef USB_HC_StartXfer(USB_OTG_GlobalTypeDef *USBx, USB_OTG_HCTypeDe
 #if defined (USB_OTG_HS)
   if (USBx == USB_OTG_HS)
   {
-    /* in DMA mode host Core automatically issues ping in case of NYET/NAK */
+    /* in DMA mode host core automatically issues ping in case of NYET/NAK */
     if (dma == 1U)
     {
       if (((hc->ep_type == EP_TYPE_CTRL) || (hc->ep_type == EP_TYPE_BULK)) && (hc->do_ssplit == 0U))
@@ -2210,7 +2210,7 @@ HAL_StatusTypeDef USB_DoPing(const USB_OTG_GlobalTypeDef *USBx, uint8_t ch_num)
 }
 
 /**
-  * @brief  Stop Host Core
+  * @brief  Stop Host core
   * @param  USBx  Selected device
   * @retval HAL state
   */

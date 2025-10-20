@@ -376,24 +376,24 @@ extern "C" {
 #define LL_DBGMCU_APB1_GRP1_LPTIM_STOP     DBGMCU_APB1_FZ_DBG_LPTIM_STOP         /*!< LPTIM counter stopped when core is halted */
 #endif /* DBGMCU_APB1_FZ_DBG_LPTIM_STOP */
 #define LL_DBGMCU_APB1_GRP1_RTC_STOP       DBGMCU_APB1_FZ_DBG_RTC_STOP           /*!< RTC counter stopped when core is halted */
-#define LL_DBGMCU_APB1_GRP1_WWDG_STOP      DBGMCU_APB1_FZ_DBG_WWDG_STOP          /*!< Debug Window Watchdog stopped when Core is halted */
-#define LL_DBGMCU_APB1_GRP1_IWDG_STOP      DBGMCU_APB1_FZ_DBG_IWDG_STOP          /*!< Debug Independent Watchdog stopped when Core is halted */
-#define LL_DBGMCU_APB1_GRP1_I2C1_STOP      DBGMCU_APB1_FZ_DBG_I2C1_SMBUS_TIMEOUT /*!< I2C1 SMBUS timeout mode stopped when Core is halted */
-#define LL_DBGMCU_APB1_GRP1_I2C2_STOP      DBGMCU_APB1_FZ_DBG_I2C2_SMBUS_TIMEOUT /*!< I2C2 SMBUS timeout mode stopped when Core is halted */
+#define LL_DBGMCU_APB1_GRP1_WWDG_STOP      DBGMCU_APB1_FZ_DBG_WWDG_STOP          /*!< Debug Window Watchdog stopped when core is halted */
+#define LL_DBGMCU_APB1_GRP1_IWDG_STOP      DBGMCU_APB1_FZ_DBG_IWDG_STOP          /*!< Debug Independent Watchdog stopped when core is halted */
+#define LL_DBGMCU_APB1_GRP1_I2C1_STOP      DBGMCU_APB1_FZ_DBG_I2C1_SMBUS_TIMEOUT /*!< I2C1 SMBUS timeout mode stopped when core is halted */
+#define LL_DBGMCU_APB1_GRP1_I2C2_STOP      DBGMCU_APB1_FZ_DBG_I2C2_SMBUS_TIMEOUT /*!< I2C2 SMBUS timeout mode stopped when core is halted */
 #if defined(DBGMCU_APB1_FZ_DBG_I2C3_SMBUS_TIMEOUT)
-#define LL_DBGMCU_APB1_GRP1_I2C3_STOP      DBGMCU_APB1_FZ_DBG_I2C3_SMBUS_TIMEOUT /*!< I2C3 SMBUS timeout mode stopped when Core is halted */
+#define LL_DBGMCU_APB1_GRP1_I2C3_STOP      DBGMCU_APB1_FZ_DBG_I2C3_SMBUS_TIMEOUT /*!< I2C3 SMBUS timeout mode stopped when core is halted */
 #endif /* DBGMCU_APB1_FZ_DBG_I2C3_SMBUS_TIMEOUT */
 #if defined(DBGMCU_APB1_FZ_DBG_I2C4_SMBUS_TIMEOUT)
-#define LL_DBGMCU_APB1_GRP1_I2C4_STOP      DBGMCU_APB1_FZ_DBG_I2C4_SMBUS_TIMEOUT /*!< I2C4 SMBUS timeout mode stopped when Core is halted */
+#define LL_DBGMCU_APB1_GRP1_I2C4_STOP      DBGMCU_APB1_FZ_DBG_I2C4_SMBUS_TIMEOUT /*!< I2C4 SMBUS timeout mode stopped when core is halted */
 #endif /* DBGMCU_APB1_FZ_DBG_I2C4_SMBUS_TIMEOUT */
 #if defined(DBGMCU_APB1_FZ_DBG_CAN1_STOP)
-#define LL_DBGMCU_APB1_GRP1_CAN1_STOP      DBGMCU_APB1_FZ_DBG_CAN1_STOP          /*!< CAN1 debug stopped when Core is halted  */
+#define LL_DBGMCU_APB1_GRP1_CAN1_STOP      DBGMCU_APB1_FZ_DBG_CAN1_STOP          /*!< CAN1 debug stopped when core is halted  */
 #endif /* DBGMCU_APB1_FZ_DBG_CAN1_STOP */
 #if defined(DBGMCU_APB1_FZ_DBG_CAN2_STOP)
-#define LL_DBGMCU_APB1_GRP1_CAN2_STOP      DBGMCU_APB1_FZ_DBG_CAN2_STOP          /*!< CAN2 debug stopped when Core is halted  */
+#define LL_DBGMCU_APB1_GRP1_CAN2_STOP      DBGMCU_APB1_FZ_DBG_CAN2_STOP          /*!< CAN2 debug stopped when core is halted  */
 #endif /* DBGMCU_APB1_FZ_DBG_CAN2_STOP */
 #if defined(DBGMCU_APB1_FZ_DBG_CAN3_STOP)
-#define LL_DBGMCU_APB1_GRP1_CAN3_STOP      DBGMCU_APB1_FZ_DBG_CAN3_STOP          /*!< CAN3 debug stopped when Core is halted  */
+#define LL_DBGMCU_APB1_GRP1_CAN3_STOP      DBGMCU_APB1_FZ_DBG_CAN3_STOP          /*!< CAN3 debug stopped when core is halted  */
 #endif /* DBGMCU_APB1_FZ_DBG_CAN3_STOP */
 /**
   * @}

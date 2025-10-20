@@ -639,7 +639,7 @@ __STATIC_INLINE uint32_t LL_LPTIM_GetPrescaler(const LPTIM_TypeDef *LPTIMx)
   * @brief  Set LPTIM input 1 source (default GPIO).
   * @rmtoll OR      OR       LL_LPTIM_SetInput1Src
   * @param  LPTIMx Low-Power Timer instance
-  * @param  Src This parameter can be one of the following values:
+  * @param  src This parameter can be one of the following values:
   *         @arg @ref LL_LPTIM_INPUT1_SRC_PAD_AF
   *         @arg @ref LL_LPTIM_INPUT1_SRC_PAD_PA4
   *         @arg @ref LL_LPTIM_INPUT1_SRC_PAD_PB9

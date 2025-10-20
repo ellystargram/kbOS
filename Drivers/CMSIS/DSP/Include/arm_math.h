@@ -75,7 +75,7 @@
    * \section toolchain Toolchain Support
    *
    * The library is now tested on Fast Models building with cmake.
-   * Core M0, M4, M7, M33, M55, A32 are tested.
+   * core M0, M4, M7, M33, M55, A32 are tested.
    *
    *
    * \section preprocessor Preprocessor Macros

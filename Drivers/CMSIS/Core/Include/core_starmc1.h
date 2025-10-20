@@ -1,6 +1,6 @@
 /**************************************************************************//**
  * @file     core_starmc1.h
- * @brief    CMSIS ArmChina STAR-MC1 Core Peripheral Access Layer Header File
+ * @brief    CMSIS ArmChina STAR-MC1 core Peripheral Access Layer Header File
  * @version  V1.0.2
  * @date     07. April 2022
  ******************************************************************************/
@@ -66,7 +66,7 @@
 #include "cmsis_version.h"
 
 /* Macro Define for STAR-MC1 */
-#define __STAR_MC                 (1U)                                       /*!< STAR-MC Core */
+#define __STAR_MC                 (1U)                                       /*!< STAR-MC core */
 
 /** __FPU_USED indicates whether an FPU is used or not.
     For this, __FPU_PRESENT has to be checked prior to making use of FPU specific registers and functions.
@@ -299,15 +299,15 @@
 
 /*******************************************************************************
  *                 Register Abstraction
-  Core Register contain:
-  - Core Register
-  - Core NVIC Register
-  - Core SCB Register
-  - Core SysTick Register
-  - Core Debug Register
-  - Core MPU Register
-  - Core SAU Register
-  - Core FPU Register
+  core Register contain:
+  - core Register
+  - core NVIC Register
+  - core SCB Register
+  - core SysTick Register
+  - core Debug Register
+  - core MPU Register
+  - core SAU Register
+  - core FPU Register
  ******************************************************************************/
 /**
   \defgroup CMSIS_core_register Defines and Type Definitions
@@ -317,7 +317,7 @@
 /**
   \ingroup    CMSIS_core_register
   \defgroup   CMSIS_CORE  Status and Control Registers
-  \brief      Core Register type definitions.
+  \brief      core Register type definitions.
   @{
  */
 
@@ -1872,8 +1872,8 @@ typedef struct
 typedef struct
 {
   __IOM uint32_t DHCSR;                  /*!< Offset: 0x000 (R/W)  Debug Halting Control and Status Register */
-  __OM  uint32_t DCRSR;                  /*!< Offset: 0x004 ( /W)  Debug Core Register Selector Register */
-  __IOM uint32_t DCRDR;                  /*!< Offset: 0x008 (R/W)  Debug Core Register Data Register */
+  __OM  uint32_t DCRSR;                  /*!< Offset: 0x004 ( /W)  Debug core Register Selector Register */
+  __IOM uint32_t DCRDR;                  /*!< Offset: 0x008 (R/W)  Debug core Register Data Register */
   __IOM uint32_t DEMCR;                  /*!< Offset: 0x00C (R/W)  Debug Exception and Monitor Control Register */
         uint32_t RESERVED0[1U];
   __IOM uint32_t DAUTHCTRL;              /*!< Offset: 0x014 (R/W)  Debug Authentication Control Register */
@@ -1923,14 +1923,14 @@ typedef struct
 #define DCB_DHCSR_C_DEBUGEN_Pos             0U                                            /*!< DCB DHCSR: Debug enable control Position */
 #define DCB_DHCSR_C_DEBUGEN_Msk            (0x1UL /*<< DCB_DHCSR_C_DEBUGEN_Pos*/)         /*!< DCB DHCSR: Debug enable control Mask */
 
-/* DCRSR, Debug Core Register Select Register Definitions */
+/* DCRSR, Debug core Register Select Register Definitions */
 #define DCB_DCRSR_REGWnR_Pos               16U                                            /*!< DCB DCRSR: Register write/not-read Position */
 #define DCB_DCRSR_REGWnR_Msk               (0x1UL << DCB_DCRSR_REGWnR_Pos)                /*!< DCB DCRSR: Register write/not-read Mask */
 
 #define DCB_DCRSR_REGSEL_Pos                0U                                            /*!< DCB DCRSR: Register selector Position */
 #define DCB_DCRSR_REGSEL_Msk               (0x7FUL /*<< DCB_DCRSR_REGSEL_Pos*/)           /*!< DCB DCRSR: Register selector Mask */
 
-/* DCRDR, Debug Core Register Data Register Definitions */
+/* DCRDR, Debug core Register Data Register Definitions */
 #define DCB_DCRDR_DBGTMP_Pos                0U                                            /*!< DCB DCRDR: Data temporary buffer Position */
 #define DCB_DCRDR_DBGTMP_Msk               (0xFFFFFFFFUL /*<< DCB_DCRDR_DBGTMP_Pos*/)     /*!< DCB DCRDR: Data temporary buffer Mask */
 
@@ -1983,8 +1983,8 @@ typedef struct
 #define DCB_DEMCR_VC_MMERR_Pos              4U                                            /*!< DCB DEMCR: Vector Catch MemManage errors Position */
 #define DCB_DEMCR_VC_MMERR_Msk             (0x1UL << DCB_DEMCR_VC_MMERR_Pos)              /*!< DCB DEMCR: Vector Catch MemManage errors Mask */
 
-#define DCB_DEMCR_VC_CORERESET_Pos          0U                                            /*!< DCB DEMCR: Vector Catch Core reset Position */
-#define DCB_DEMCR_VC_CORERESET_Msk         (0x1UL /*<< DCB_DEMCR_VC_CORERESET_Pos*/)      /*!< DCB DEMCR: Vector Catch Core reset Mask */
+#define DCB_DEMCR_VC_CORERESET_Pos          0U                                            /*!< DCB DEMCR: Vector Catch core reset Position */
+#define DCB_DEMCR_VC_CORERESET_Msk         (0x1UL /*<< DCB_DEMCR_VC_CORERESET_Pos*/)      /*!< DCB DEMCR: Vector Catch core reset Mask */
 
 /* DAUTHCTRL, Debug Authentication Control Register Definitions */
 #define DCB_DAUTHCTRL_INTSPNIDEN_Pos        3U                                            /*!< DCB DAUTHCTRL: Internal Secure non-invasive debug enable Position */
@@ -2091,7 +2091,7 @@ typedef struct
 
 /**
   \ingroup    CMSIS_core_register
-  \defgroup   CMSIS_core_bitfield     Core register bit field macros
+  \defgroup   CMSIS_core_bitfield     core register bit field macros
   \brief      Macros for use with bit field definitions (xxx_Pos, xxx_Msk).
   @{
  */
@@ -2117,12 +2117,12 @@ typedef struct
 
 /**
   \ingroup    CMSIS_core_register
-  \defgroup   CMSIS_core_base     Core Definitions
+  \defgroup   CMSIS_core_base     core Definitions
   \brief      Definitions for base addresses, unions, and structures.
   @{
  */
 
-/* Memory mapping of Core Hardware */
+/* Memory mapping of core Hardware */
   #define SCS_BASE            (0xE000E000UL)                             /*!< System Control Space Base Address */
   #define ITM_BASE            (0xE0000000UL)                             /*!< ITM Base Address */
   #define DWT_BASE            (0xE0001000UL)                             /*!< DWT Base Address */
@@ -2190,11 +2190,11 @@ typedef struct
 
 /*******************************************************************************
  *                Hardware Abstraction Layer
-  Core Function Interface contains:
-  - Core NVIC Functions
-  - Core SysTick Functions
-  - Core Debug Functions
-  - Core Register Access Functions
+  core Function Interface contains:
+  - core NVIC Functions
+  - core SysTick Functions
+  - core Debug Functions
+  - core Register Access Functions
  ******************************************************************************/
 /**
   \defgroup CMSIS_Core_FunctionInterface Functions and Instructions Reference

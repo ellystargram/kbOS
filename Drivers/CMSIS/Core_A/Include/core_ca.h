@@ -1,6 +1,6 @@
 /**************************************************************************//**
  * @file     core_ca.h
- * @brief    CMSIS Cortex-A Core Peripheral Access Layer Header File
+ * @brief    CMSIS Cortex-A core Peripheral Access Layer Header File
  * @version  V1.0.3
  * @date     28. January 2020
  ******************************************************************************/
@@ -40,10 +40,10 @@
  ******************************************************************************/
 
 /*  CMSIS CA definitions */
-#define __CA_CMSIS_VERSION_MAIN  (1U)                                      /*!< \brief [31:16] CMSIS-Core(A) main version   */
-#define __CA_CMSIS_VERSION_SUB   (1U)                                      /*!< \brief [15:0]  CMSIS-Core(A) sub version    */
+#define __CA_CMSIS_VERSION_MAIN  (1U)                                      /*!< \brief [31:16] CMSIS-core(A) main version   */
+#define __CA_CMSIS_VERSION_SUB   (1U)                                      /*!< \brief [15:0]  CMSIS-core(A) sub version    */
 #define __CA_CMSIS_VERSION       ((__CA_CMSIS_VERSION_MAIN << 16U) | \
-                                   __CA_CMSIS_VERSION_SUB          )       /*!< \brief CMSIS-Core(A) version number         */
+                                   __CA_CMSIS_VERSION_SUB          )       /*!< \brief CMSIS-core(A) version number         */
 
 #if defined ( __CC_ARM )
   #if defined __TARGET_FPU_VFP
@@ -180,7 +180,7 @@
 
  /*******************************************************************************
   *                 Register Abstraction
-   Core Register contain:
+   core Register contain:
    - CPSR
    - CP15 Registers
    - L2C-310 Cache Controller
@@ -188,7 +188,7 @@
    - Generic Interrupt Controller Interface
   ******************************************************************************/
 
-/* Core Register CPSR */
+/* core Register CPSR */
 typedef union
 {
   struct
@@ -835,7 +835,7 @@ typedef struct
 
  /*******************************************************************************
   *                Hardware Abstraction Layer
-   Core Function Interface contains:
+   core Function Interface contains:
    - L1 Cache Functions
    - L2C-310 Cache Controller Functions 
    - PL1 Timer Functions

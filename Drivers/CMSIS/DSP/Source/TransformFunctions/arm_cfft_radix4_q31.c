@@ -134,7 +134,7 @@ void arm_cfft_radix4_q31(
  */
 
 /**
-  @brief         Core function for the Q31 CFFT butterfly process.
+  @brief         core function for the Q31 CFFT butterfly process.
   @param[in,out] pSrc             points to the in-place buffer of Q31 data type.
   @param[in]     fftLen           length of the FFT.
   @param[in]     pCoef            points to twiddle coefficient buffer.
@@ -466,7 +466,7 @@ void arm_radix4_butterfly_q31(
 
 
 /**
-  @brief         Core function for the Q31 CIFFT butterfly process.
+  @brief         core function for the Q31 CIFFT butterfly process.
   @param[in,out] pSrc             points to the in-place buffer of Q31 data type.
   @param[in]     fftLen           length of the FFT.
   @param[in]     pCoef            points to twiddle coefficient buffer.

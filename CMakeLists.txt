@@ -24,7 +24,7 @@ set(CMAKE_PROJECT_NAME kbOS)
 # Enable compile command to ease indexing with e.g. clangd
 set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 
-# Core project settings
+# core project settings
 project(${CMAKE_PROJECT_NAME})
 message("Build type: " ${CMAKE_BUILD_TYPE})
 
@@ -32,7 +32,16 @@ message("Build type: " ${CMAKE_BUILD_TYPE})
 enable_language(C ASM)
 
 # Create an executable object type
-add_executable(${CMAKE_PROJECT_NAME})
+add_executable(${CMAKE_PROJECT_NAME}
+        core/src/engine/pin/Pin.c
+        core/src/engine/pin/Pin.h
+        core/src/engine/keyscan/Keyscan.c
+        core/src/engine/keyscan/Keyscan.h
+        core/src/engine/keyboard/KeyboardReporter.c
+        core/src/engine/keyboard/KeyboardReporter.h
+        core/src/layout/qwerty/qwerty.c
+        core/src/layout/qwerty/qwerty.h
+)
 
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)

@@ -130,7 +130,7 @@ void arm_float_to_q31(
   q31_t * pDst,
   uint32_t blockSize)
 {
-  const float32_t *pIn = pSrc;                         /* Src pointer */
+  const float32_t *pIn = pSrc;                         /* src pointer */
   uint32_t blkCnt;                               /* loop counter */
 
   float32x4_t inV;

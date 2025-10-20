@@ -65,7 +65,7 @@ __WEAK int32_t OS_Tick_Setup (uint32_t freq, IRQHandler_t handler) {
 #elif  (defined(__ARM_ARCH_6M__)        && (__ARM_ARCH_6M__        != 0))
   SCB->SHP[1]  |= ((uint32_t)SYSTICK_IRQ_PRIORITY << 24);
 #else
-#error "Unknown ARM Core!"
+#error "Unknown ARM core!"
 #endif
 
   SysTick->CTRL =  SysTick_CTRL_CLKSOURCE_Msk | SysTick_CTRL_TICKINT_Msk;

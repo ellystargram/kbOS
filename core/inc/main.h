@@ -32,6 +32,9 @@ extern "C" {
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+#include "../src/engine/pin/Pin.h"
+#include "../src/engine/keyscan/Keyscan.h"
+
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

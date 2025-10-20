@@ -5053,7 +5053,7 @@ __STATIC_INLINE uint32_t LL_RCC_PLL_GetDivider(void)
   *         SSCGR        INCSTEP       LL_RCC_PLL_ConfigSpreadSpectrum\n
   *         SSCGR        SPREADSEL     LL_RCC_PLL_ConfigSpreadSpectrum
   * @param  Mod Between Min_Data=0 and Max_Data=8191
-  * @param  Inc Between Min_Data=0 and Max_Data=32767
+  * @param  inc Between Min_Data=0 and Max_Data=32767
   * @param  Sel This parameter can be one of the following values:
   *         @arg @ref LL_RCC_SPREAD_SELECT_CENTER
   *         @arg @ref LL_RCC_SPREAD_SELECT_DOWN

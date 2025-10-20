@@ -31,7 +31,7 @@
 
     (#)Fill parameters of Init structure in HCD handle
 
-    (#)Call HAL_HCD_Init() API to initialize the HCD peripheral (Core, Host core, ...)
+    (#)Call HAL_HCD_Init() API to initialize the HCD peripheral (core, Host core, ...)
 
     (#)Initialize the HCD low level resources through the HAL_HCD_MspInit() API:
         (##) Enable the HCD/USB Low Level interface clock using the following macros
@@ -165,7 +165,7 @@ HAL_StatusTypeDef HAL_HCD_Init(HCD_HandleTypeDef *hhcd)
   /* Disable the Interrupts */
   __HAL_HCD_DISABLE(hhcd);
 
-  /* Init the Core (common init.) */
+  /* Init the core (common init.) */
   if (USB_CoreInit(hhcd->Instance, hhcd->Init) != HAL_OK)
   {
     hhcd->State = HAL_HCD_STATE_ERROR;

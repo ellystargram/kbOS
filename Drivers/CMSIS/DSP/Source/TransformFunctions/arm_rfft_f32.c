@@ -141,7 +141,7 @@ void arm_rfft_f32(
  */
 
 /**
-  @brief         Core Real FFT process
+  @brief         core Real FFT process
   @param[in]     pSrc      points to input buffer
   @param[in]     fftLen    length of FFT
   @param[in]     pATable   points to twiddle Coef A buffer
@@ -237,7 +237,7 @@ void arm_split_rfft_f32(
 
 
 /**
-  @brief         Core Real IFFT process
+  @brief         core Real IFFT process
   @param[in]     pSrc      points to input buffer
   @param[in]     fftLen    length of FFT
   @param[in]     pATable   points to twiddle Coef A buffer

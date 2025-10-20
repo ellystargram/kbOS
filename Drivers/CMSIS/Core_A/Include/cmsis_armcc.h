@@ -90,7 +90,7 @@
   #define __COMPILER_BARRIER()                   __memory_changed()
 #endif
 
-/* ##########################  Core Instruction Access  ######################### */
+/* ##########################  core Instruction Access  ######################### */
 /**
   \brief   No Operation
  */
@@ -294,7 +294,7 @@ __attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int16_t __REVSH(in
  */
 #define __USAT                            __usat
 
-/* ###########################  Core Function Access  ########################### */
+/* ###########################  core Function Access  ########################### */
 
 /**
   \brief   Enable IRQ Interrupts

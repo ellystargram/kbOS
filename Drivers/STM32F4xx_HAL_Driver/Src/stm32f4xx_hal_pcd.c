@@ -33,7 +33,7 @@
 
      (#) Fill parameters of Init structure in HCD handle
 
-     (#) Call HAL_PCD_Init() API to initialize the PCD peripheral (Core, Device core, ...)
+     (#) Call HAL_PCD_Init() API to initialize the PCD peripheral (core, Device core, ...)
 
      (#) Initialize the PCD low level resources through the HAL_PCD_MspInit() API:
          (##) Enable the PCD/USB Low Level interface clock using
@@ -186,7 +186,7 @@ HAL_StatusTypeDef HAL_PCD_Init(PCD_HandleTypeDef *hpcd)
   /* Disable the Interrupts */
   __HAL_PCD_DISABLE(hpcd);
 
-  /*Init the Core (common init.) */
+  /*Init the core (common init.) */
   if (USB_CoreInit(hpcd->Instance, hpcd->Init) != HAL_OK)
   {
     hpcd->State = HAL_PCD_STATE_ERROR;

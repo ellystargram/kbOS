@@ -99,7 +99,7 @@ void arm_q7_to_float(
   float32_t * pDst,
   uint32_t blockSize)
 {
-  const q7_t *pIn = pSrc;                              /* Src pointer */
+  const q7_t *pIn = pSrc;                              /* src pointer */
   uint32_t blkCnt;                               /* loop counter */
 
   int8x16_t inV;

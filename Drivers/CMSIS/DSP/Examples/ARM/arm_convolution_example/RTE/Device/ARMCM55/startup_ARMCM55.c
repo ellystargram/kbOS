@@ -1,6 +1,6 @@
 /******************************************************************************
  * @file     startup_ARMCM55.c
- * @brief    CMSIS Core Device Startup File for ARMCM55 Device
+ * @brief    CMSIS core Device Startup File for ARMCM55 Device
  * @version  V1.0.0
  * @date     31. March 2020
  ******************************************************************************/

@@ -103,7 +103,7 @@ typedef struct
   uint8_t dma_enable;              /*!< USB DMA state.
                                          If DMA is not supported this parameter shall be set by default to zero */
 
-  uint8_t speed;                   /*!< USB Core speed.
+  uint8_t speed;                   /*!< USB core speed.
                                         This parameter can be any value of @ref PCD_Speed/HCD_Speed
                                                                                 (HCD_SPEED_xxx, HCD_SPEED_xxx) */
 
@@ -253,7 +253,7 @@ typedef USB_HCTypeDef       USB_OTG_HCTypeDef;
   * @}
   */
 
-/** @defgroup USB_Core_Mode_ USB Core Mode
+/** @defgroup USB_Core_Mode_ USB core Mode
   * @{
   */
 #define USB_OTG_MODE_DEVICE                    0U
@@ -263,7 +263,7 @@ typedef USB_HCTypeDef       USB_OTG_HCTypeDef;
   * @}
   */
 
-/** @defgroup USB_LL_Core_Speed USB Low Layer Core Speed
+/** @defgroup USB_LL_Core_Speed USB Low Layer core Speed
   * @{
   */
 #define USB_OTG_SPEED_HIGH                     0U
@@ -273,7 +273,7 @@ typedef USB_HCTypeDef       USB_OTG_HCTypeDef;
   * @}
   */
 
-/** @defgroup USB_LL_Core_PHY USB Low Layer Core PHY
+/** @defgroup USB_LL_Core_PHY USB Low Layer core PHY
   * @{
   */
 #define USB_OTG_ULPI_PHY                       1U
@@ -296,7 +296,7 @@ typedef USB_HCTypeDef       USB_OTG_HCTypeDef;
   * @}
   */
 
-/** @defgroup USB_LL_Core_MPS USB Low Layer Core MPS
+/** @defgroup USB_LL_Core_MPS USB Low Layer core MPS
   * @{
   */
 #define USB_OTG_HS_MAX_PACKET_SIZE           512U
@@ -306,7 +306,7 @@ typedef USB_HCTypeDef       USB_OTG_HCTypeDef;
   * @}
   */
 
-/** @defgroup USB_LL_Core_PHY_Frequency USB Low Layer Core PHY Frequency
+/** @defgroup USB_LL_Core_PHY_Frequency USB Low Layer core PHY Frequency
   * @{
   */
 #define DSTS_ENUMSPD_HS_PHY_30MHZ_OR_60MHZ     (0U << 1)
@@ -316,7 +316,7 @@ typedef USB_HCTypeDef       USB_OTG_HCTypeDef;
   * @}
   */
 
-/** @defgroup USB_LL_CORE_Frame_Interval USB Low Layer Core Frame Interval
+/** @defgroup USB_LL_CORE_Frame_Interval USB Low Layer core Frame Interval
   * @{
   */
 #define DCFG_FRAME_INTERVAL_80                 0U

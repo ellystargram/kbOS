@@ -104,7 +104,7 @@ const arm_cfft_radix2_instance_f16 * S,
 ** ------------------------------------------------------------------- */
 
 /*
-* @brief  Core function for the floating-point CFFT butterfly process.
+* @brief  core function for the floating-point CFFT butterfly process.
 * @param[in, out] *pSrc            points to the in-place buffer of floating-point data type.
 * @param[in]      fftLen           length of the FFT.
 * @param[in]      *pCoef           points to the twiddle coefficient buffer.

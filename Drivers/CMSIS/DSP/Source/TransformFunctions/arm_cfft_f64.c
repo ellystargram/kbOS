@@ -50,7 +50,7 @@ extern void arm_bitreversal_64(
  * ---------------------------------------------------------------------- */
 
 /*
-* @brief  Core function for the Double Precision floating-point CFFT butterfly process.
+* @brief  core function for the Double Precision floating-point CFFT butterfly process.
 * @param[in, out] *pSrc            points to the in-place buffer of F64 data type.
 * @param[in]      fftLen           length of the FFT.
 * @param[in]      *pCoef           points to the twiddle coefficient buffer.
@@ -184,7 +184,7 @@ void arm_radix4_butterfly_f64(
 }
 
 /*
-* @brief  Core function for the Double Precision floating-point CFFT butterfly process.
+* @brief  core function for the Double Precision floating-point CFFT butterfly process.
 * @param[in, out] *pSrc            points to the in-place buffer of F64 data type.
 * @param[in]      fftLen           length of the FFT.
 * @param[in]      *pCoef           points to the twiddle coefficient buffer.

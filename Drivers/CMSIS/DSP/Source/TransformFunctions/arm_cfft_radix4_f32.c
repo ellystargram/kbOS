@@ -100,7 +100,7 @@ void arm_cfft_radix4_f32(
  * ---------------------------------------------------------------------- */
 
 /**
-  brief         Core function for the floating-point CFFT butterfly process.
+  brief         core function for the floating-point CFFT butterfly process.
   param[in,out] pSrc             points to the in-place buffer of floating-point data type
   param[in]     fftLen           length of the FFT
   param[in]     pCoef            points to the twiddle coefficient buffer
@@ -598,7 +598,7 @@ void arm_radix4_butterfly_f32(
 }
 
 /**
-  brief         Core function for the floating-point CIFFT butterfly process.
+  brief         core function for the floating-point CIFFT butterfly process.
   param[in,out] pSrc             points to the in-place buffer of floating-point data type
   param[in]     fftLen           length of the FFT
   param[in]     pCoef            points to twiddle coefficient buffer
