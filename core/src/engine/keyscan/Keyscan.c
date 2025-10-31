@@ -14,7 +14,11 @@ const osThreadAttr_t keyscanTaskAttributes = {
     .priority = (osPriority_t)osPriorityRealtime,
 };
 
-uint8_t keyboardLayout = KEYBOARD_60P;
+uint8_t keyboardLayout                                             = KEYBOARD_60P;
+uint8_t keyBoardKeyLayout                                          = KEYBOARD_KEY_LAYOUT_QWERTY;
+void (*keyboardKeyLayoutAppliers[KEYBOARD_KEY_LAYOUT_COUNT])(void) = {
+    applyQWERTY,
+};
 
 const KeyType keyA = (KeyType){.biosCode = KEYBOARD_A, .asciiCode = 'A'};
 const KeyType keyB = (KeyType){.biosCode = KEYBOARD_B, .asciiCode = 'B'};
@@ -333,7 +337,7 @@ const KeySwitch* keySwitchBoard[KEYBOARD_FULL_FUNCTION_COLS][KEYBOARD_FULL_FUNCT
 
 void keyscanInit(void) {
     clearAllKeySwitchActions();
-    applyQWERTY();
+    keyboardKeyLayoutAppliers[keyBoardKeyLayout]();
     keyscanTaskHandle = osThreadNew(keyscanTask, NULL, &keyscanTaskAttributes);
 }
 
@@ -392,7 +396,7 @@ void clearKeySwitchAction(KeySwitch* keySwitch) {
 void clearAllKeySwitchActions(void) {
     for (uint8_t columnIndex = 0; columnIndex < KEYBOARD_FULL_FUNCTION_COLS; columnIndex++) {
         for (uint8_t rowIndex = 0; rowIndex < KEYBOARD_FULL_FUNCTION_ROWS; rowIndex++) {
-            clearKeySwitchAction(keySwitchBoard[columnIndex][rowIndex]);
+            clearKeySwitchAction((KeySwitch*)keySwitchBoard[columnIndex][rowIndex]);
         }
     }
 }

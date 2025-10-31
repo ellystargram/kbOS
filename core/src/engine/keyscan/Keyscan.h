@@ -45,7 +45,13 @@ enum KeyboardLayoutType {
     KEYBOARD_LAYOUT_TYPE_COUNT
 };
 
+enum KeyboardKeyLayoutType {
+    KEYBOARD_KEY_LAYOUT_QWERTY,
+    KEYBOARD_KEY_LAYOUT_COUNT
+};
+
 extern uint8_t keyboardLayout;
+extern uint8_t keyBoardKeyLayout;
 
 typedef struct {
     const uint8_t biosCode;

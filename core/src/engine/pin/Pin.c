@@ -5,26 +5,41 @@
 #include "Pin.h"
 
 // Constants
-const Pin spi1RegisterSelectPin = (Pin){.port = GPIOB, .pin = GPIO_PIN_4, .comment = "SPI1 RegisterSelect"};
-const Pin spi1ResetPin          = (Pin){.port = GPIOB, .pin = GPIO_PIN_3, .comment = "SPI1 RESET"};
+const Pin spi0RegisterSelectPin = (Pin){.port = GPIOB, .pin = GPIO_PIN_4, .comment = "SPI0 RegisterSelect"};
+const Pin spi0ResetPin          = (Pin){.port = GPIOB, .pin = GPIO_PIN_3, .comment = "SPI0 RESET"};
 
-const Pin spi2RegisterSelectPin = (Pin){.port = GPIOC, .pin = GPIO_PIN_2, .comment = "SPI2 RegisterSelect"};
-const Pin spi2ResetPin          = (Pin){.port = GPIOB, .pin = GPIO_PIN_9, .comment = "SPI2 RESET"};
+const Pin spi1RegisterSelectPin = (Pin){.port = GPIOC, .pin = GPIO_PIN_2, .comment = "SPI1 RegisterSelect"};
+const Pin spi1ResetPin          = (Pin){.port = GPIOB, .pin = GPIO_PIN_9, .comment = "SPI1 RESET"};
 
-const Pin spi3RegisterSelectPin = (Pin){.port = GPIOC, .pin = GPIO_PIN_11, .comment = "SPI3 RegisterSelect"};
-const Pin spi3ResetPin          = (Pin){.port = GPIOA, .pin = GPIO_PIN_15, .comment = "SPI3 RESET"};
+const Pin spi2RegisterSelectPin = (Pin){.port = GPIOC, .pin = GPIO_PIN_11, .comment = "SPI2 RegisterSelect"};
+const Pin spi2ResetPin          = (Pin){.port = GPIOA, .pin = GPIO_PIN_15, .comment = "SPI2 RESET"};
 
 const Pin userButtonPin = (Pin){.port = GPIOC, .pin = GPIO_PIN_13, .comment = "DEBUG NUCLEO BOARD SWITCH"};
-const Pin led1Pin       = (Pin){.port = GPIOB, .pin = GPIO_PIN_0, .comment = "DEBUG NUCLEO BOARD LED1"};
-const Pin led2Pin       = (Pin){.port = GPIOB, .pin = GPIO_PIN_7, .comment = "DEBUG NUCLEO BOARD LED2"};
-const Pin led3Pin       = (Pin){.port = GPIOB, .pin = GPIO_PIN_14, .comment = "DEBUG NUCLEO BOARD LED3"};
+const Pin ledPin0       = (Pin){.port = GPIOB, .pin = GPIO_PIN_0, .comment = "DEBUG NUCLEO BOARD LED0"};
+const Pin ledPin1       = (Pin){.port = GPIOB, .pin = GPIO_PIN_7, .comment = "DEBUG NUCLEO BOARD LED1"};
+const Pin ledPin2       = (Pin){.port = GPIOB, .pin = GPIO_PIN_14, .comment = "DEBUG NUCLEO BOARD LED2"};
 
-const Pin moduleDetectPin1 = (Pin){.port = GPIOD, .pin = GPIO_PIN_0, .comment = "Module Detect Pin 1"};
-const Pin moduleDetectPin2 = (Pin){.port = GPIOD, .pin = GPIO_PIN_1, .comment = "Module Detect Pin 2"};
-const Pin moduleDetectPin3 = (Pin){.port = GPIOD, .pin = GPIO_PIN_2, .comment = "Module Detect Pin 3"};
-const Pin moduleDetectPin4 = (Pin){.port = GPIOD, .pin = GPIO_PIN_3, .comment = "Module Detect Pin 4"};
-const Pin moduleDetectPin5 = (Pin){.port = GPIOD, .pin = GPIO_PIN_4, .comment = "Module Detect Pin 5"};
-const Pin moduleDetectPin6 = (Pin){.port = GPIOD, .pin = GPIO_PIN_5, .comment = "Module Detect Pin 6"};
+const Pin ledPins[] = {
+    ledPin0,
+    ledPin1,
+    ledPin2
+};
+
+const Pin moduleDetectPin0 = (Pin){.port = GPIOD, .pin = GPIO_PIN_0, .comment = "Module Detect Pin 0"};
+const Pin moduleDetectPin1 = (Pin){.port = GPIOD, .pin = GPIO_PIN_1, .comment = "Module Detect Pin 1"};
+const Pin moduleDetectPin2 = (Pin){.port = GPIOD, .pin = GPIO_PIN_2, .comment = "Module Detect Pin 2"};
+const Pin moduleDetectPin3 = (Pin){.port = GPIOD, .pin = GPIO_PIN_3, .comment = "Module Detect Pin 3"};
+const Pin moduleDetectPin4 = (Pin){.port = GPIOD, .pin = GPIO_PIN_4, .comment = "Module Detect Pin 4"};
+const Pin moduleDetectPin5 = (Pin){.port = GPIOD, .pin = GPIO_PIN_5, .comment = "Module Detect Pin 5"};
+
+const Pin moduleDetectPins[] = {
+    moduleDetectPin0,
+    moduleDetectPin1,
+    moduleDetectPin2,
+    moduleDetectPin3,
+    moduleDetectPin4,
+    moduleDetectPin5
+};
 
 const Pin row0  = (Pin){.port = GPIOE, .pin = GPIO_PIN_0, .comment = "Row 0"};
 const Pin row1  = (Pin){.port = GPIOE, .pin = GPIO_PIN_1, .comment = "Row 1"};
@@ -84,9 +99,15 @@ const Pin cols[] = {
     col24, col25, col26
 };
 
-const LCDGroup lcd1Pin = (LCDGroup){.registerSelectPin = &spi1RegisterSelectPin, .resetPin = &spi1ResetPin};
-const LCDGroup lcd2Pin = (LCDGroup){.registerSelectPin = &spi2RegisterSelectPin, .resetPin = &spi2ResetPin};
-const LCDGroup lcd3Pin = (LCDGroup){.registerSelectPin = &spi3RegisterSelectPin, .resetPin = &spi3ResetPin};
+const LCDGroup lcdPin0 = (LCDGroup){.registerSelectPin = &spi0RegisterSelectPin, .resetPin = &spi0ResetPin};
+const LCDGroup lcdPin1 = (LCDGroup){.registerSelectPin = &spi1RegisterSelectPin, .resetPin = &spi1ResetPin};
+const LCDGroup lcdPin2 = (LCDGroup){.registerSelectPin = &spi2RegisterSelectPin, .resetPin = &spi2ResetPin};
+
+const LCDGroup lcdPins[] = {
+    lcdPin0,
+    lcdPin1,
+    lcdPin2
+};
 
 void pinInit(void) {}
 
